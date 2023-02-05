@@ -1,0 +1,135 @@
+
+Photo of RAHUL KUMAR SINGH
+RAHUL KUMAR SINGH
+M.Tech NIT Durgapur
+
+Who's viewed your profile
+113
+Impressions of your posts
+0
+Access exclusive tools & insights
+Try Premium for free
+My items
+Recent
+
+Machine Learning Community (Moderated)
+Full Stack Developer - Java technologies, UI & Microservices
+India Jobs Network - Careers, Recruitment, Talent Acquisition, & HR
+Human Resources: HR | Recruiting | Startups | Fortune 500 | Blockchain | Web3 | Metaverse
+Front End Developer Group
+GroupsSee all Groups
+
+Machine Learning Community (Moderated)
+Full Stack Developer - Java technologies, UI & Microservices
+India Jobs Network - Careers, Recruitment, Talent Acquisition, & HRShow more Show more Groups
+EventsSee all Events
+
+Followed HashtagsSee all Followed Hashtags
+Discover more
+Visit profile for RAHUL KUMAR SINGH
+
+Start a post
+
+Photo
+
+Video
+
+Job
+Write article
+
+Sort by:
+Top
+Feed Updates
+Feed post number 1
+SATYAM’s profile photo
+SATYAM MISHRA likes this
+
+Aman Bansal
+Aman Bansal
+• 1st
+Sr. Software Engineer@Times Internet | 13k+ Linkedin🚀 | Frontend ❤️ | React JS
+2h • Edited •  2 hours ago
+What is the difference between 10 lpa and 1 crore salaried SDE(frontend) having 6-7 years of experience?
+
+10 lpa salaried dev know React Js or Angular JS.
+
+1 crore salaried dev expertiese in-
+
+1. Progressive web application (pwa).
+2. Accessibility
+3. Chrome dev tools
+4. Server side rendering
+5. Next Js
+6. Scss, tailwind etc
+7. How to build scalable application using vanilla Javascript.
+8. Performance of web application
+9. How to design reusable components
+10. Security
+11. How to write polyfills
+12. Web workers
+13. Service workers
+14. Microfrontend
+15. Jenkins
+16. Bundlers
+
+and in the end offcourse React Js and Angular JS etc.
+
+If want to know companies hiring for frontend or sde roles during recession at great pay roles, stay tuned for further posts.
+
+Feel free to follow Aman Bansal
+
+#salary #frontend #startup #faang #leetcode
+…see more
+
+No alternative text description for this imageActivate to view larger image
+likeinsightfullove
+177
+SATYAM MISHRA and 176 others
+8 comments
+
+Like
+
+Comment
+
+Repost
+
+Send in a private message
+Send
+Feed post number 2
+Amazon Web Services (AWS)
+Amazon Web Services (AWS)
+Promoted
+
+Build a smarter, data-driven Startup with AWS today. Register and join us to unlock resources to scale and grow your Startup.
+
+Unlock the power of AI/ML
+aws.amazon.com
+Learn more. View Sponsored Content
+Learn more
+likecelebratesupport
+504
+6 comments
+1 repost
+
+Like
+
+Comment
+
+Repost
+
+Send in a private message
+Send
+Feed post number 3
+Boina BavithaStatus is online
+Boina Bavitha
+(She/Her) • 1st
+Digital Specialist Engineer @Infosys | Python | MYSQL | Postgres | PowerBI | Machine Learning
+35m • Edited •  35 minutes ago
+
+Get ready to elevate your data analysis game using 𝘄𝗶𝗻𝗱𝗼𝘄 𝗳𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝘀!!
+
+It took me some time to understand window functions. So I would like to help others who are learning window functions with what I have understood .
+
+Firstly I will discuss what are window functions and in the coming days I will discuss about the most commonly used window functions.
+
+
