@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include("../partials/Header.ejs") %>
-
     <body>
         <%- include("../partials/Navbar.ejs") %>
         <div class="card container my-3">
@@ -20,8 +19,6 @@
         let btndelete=document.getElementsByClassName("deletebtn")[0];
         console.log(btndelete)
         btndelete.addEventListener("click",(e)=>{
-            console.log(btndelete);
-            console.log(btndelete.id);
             fetch(`/singleblog/${btndelete.id}`,{method:"delete"}).then((res)=>{
                 let response=res.json();
                 return response;

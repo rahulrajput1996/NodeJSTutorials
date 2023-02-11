@@ -1,13 +1,13 @@
 const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
-const Blogs = require("./models/Blogs");
+const router = require("./routes/blogRoutes");
 
 mongoose.set("strictQuery", true);
 const app = express();
 
 app.set("view engine", "ejs");
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 // app.set("views", "public");  // by-default look into views folder but if we give access of other folder
 
 mongoose
@@ -32,28 +32,7 @@ mongoose
 app.use(morgan("dev"));
 app.use(express.static("public"));
 // app.use(morgan("tiny"));
-
-app.get("/", (req, res) => {
-  res.redirect("/allblogs");
-});
-
-app.get("/allblogs", (req, res) => {
-  Blogs.find()
-    .sort({ createdAt: -1 })
-    .then((result) => {
-      //   res.send(result);
-      res
-        .status(200)
-        .render("blogs/Home.ejs", { title: "Home", blogs: result });
-    })
-    .catch((err) => {
-      res.send(err);
-    });
-});
-
-app.get("/about", (req, res) => {
-  res.status(200).render("blogs/About.ejs", { title: "About" });
-});
+app.use(router);
 
 // app.get("/create-blog", (req, res) => {
 //   let blogs = { title: "C++ language", desc: "Old,advanced and gold" };
@@ -65,44 +44,6 @@ app.get("/about", (req, res) => {
 //       res.send(err);
 //     });
 // });
-
-app.get("/singleblog/:id", (req, res) => {
-  Blogs.findById(req.params.id)
-    .then((result) => {
-      console.log(result);
-      res.render("blogs/blog.ejs", { title: "single blog", blog: result });
-    })
-    .catch((err) => {
-      res.send(err);
-    });
-});
-
-app.get("/create", (req, res) => {
-  res.status(200).render("blogs/Create.ejs", { title: "Create" });
-});
-
-app.delete("/singleblog/:id", (req, res) => {
-  console.log(req.params.id);
-  Blogs.findByIdAndDelete(req.params.id)
-    .then(() => {
-      res.json({ success: true, redirect: "/allblogs" });
-    })
-    .catch(() => {
-      console.log(err);
-    });
-});
-
-app.post("/create", (req, res) => {
-  //   console.log(req.body);
-  Blogs.create(req.body)
-    .then((result) => {
-      //   console.log(result);
-      res.redirect("/allblogs");
-    })
-    .catch(() => {
-      console.log(err);
-    });
-});
 
 app.use((req, res) => {
   res.status(404).render("blogs/404.ejs", { title: "404 not found" });
