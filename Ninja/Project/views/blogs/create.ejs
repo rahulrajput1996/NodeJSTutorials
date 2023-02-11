@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/Header.ejs") %>
+
+    <body>
+        <%- include("../partials/Navbar.ejs") %>
+            <form action="/create" method="post" class="container my-3">
+                <div class="mb-3">
+                    <label for="mytitle" class="form-label">Enter Blog Title</label>
+                    <input type="text" class="form-control" id="mytitle"  name="title" aria-describedby="emailHelp" placeholder="Enter title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Enter Blog Description</label>
+                    <textarea type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter description" name="desc"
+                        required="" style="height: 121px;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <%- include("../partials/Footer.ejs") %>
+
+    </body>
+
+</html>

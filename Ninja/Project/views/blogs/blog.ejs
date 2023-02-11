@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/Header.ejs") %>
+
+    <body>
+        <%- include("../partials/Navbar.ejs") %>
+        <div class="card container my-3">
+            <div class="card-header">
+                Your Blog
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"><%= blog.title %></h5>
+                <p class="card-text"><%= blog.desc %></p>
+                <button id="<%= blog._id %>" class="deletebtn btn btn-danger" >delete</button>
+            </div>
+        </div>                 
+        <%- include("../partials/Footer.ejs") %>
+    </body>
+    <script>
+        let btndelete=document.getElementsByClassName("deletebtn")[0];
+        console.log(btndelete)
+        btndelete.addEventListener("click",(e)=>{
+            console.log(btndelete);
+            console.log(btndelete.id);
+            fetch(`/singleblog/${btndelete.id}`,{method:"delete"}).then((res)=>{
+                let response=res.json();
+                return response;
+            }).then((data)=>{
+                console.log(data);
+                window.location.href=data.redirect;
+            })
+            .catch((err)=>{
+                console.log(err)
+            })
+        })
+    </script>
+
+</html>
