@@ -1,7 +1,8 @@
-const { Sequelize, fn } = require("sequelize");
+const { Sequelize, QueryTypes } = require("sequelize");
 const users = require("../models/user.model");
+const sequelize = require("../db.config");
 const createUser = async (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   const { name, age, mobile, fullname } = req.body;
 
   //first method for creation
@@ -91,7 +92,27 @@ const createUser = async (req, res) => {
   //   },
   // });
 
-  let data = await users.create({ name, age, mobile, fullname });
+  // let data = await users.create({ name, age, mobile, fullname });
+
+  // let data = await sequelize.query("select * from users", {
+  //   type: QueryTypes.SELECT,
+  //   // model: users,
+  //   // mapToModel: true,
+  //   // row: false,
+  // });
+
+  // let data = await sequelize.query(
+  //   // "select * from users where name=? and age=?",
+  //   // "select * from users where name=:names and age=:ages",
+  //   "select * from users where name=$names and age=$ages",
+  //   {
+  //     type: QueryTypes.SELECT,
+  //     // replacements: ["rahul11", 70],
+  //     // replacements: { names: "rahul11", ages: 60 },
+  //     bind: { names: "rahul11", ages: 60 },
+  //   }
+  // );
+
   // return res.json({ success: true });
   // return res.json({ data, created });
   return res.json({ data });
