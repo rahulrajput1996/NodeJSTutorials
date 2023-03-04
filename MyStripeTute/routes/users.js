@@ -6,7 +6,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 /* GET users listing. */
 router.get("/", function (req, res, next) {
-  res.send("respond with a resource");
+  res.redirect(303, `${YOUR_DOMAIN}/checkout.html`);
 });
 
 router.post("/payment", async (req, res) => {
@@ -56,7 +56,7 @@ router.post("/payment", async (req, res) => {
         {
           shipping_rate_data: {
             type: "fixed_amount",
-            fixed_amount: { amount: 0, currency: "inr" },
+            fixed_amount: { amount: 1000, currency: "inr" },
             display_name: "Free shipping",
             delivery_estimate: {
               minimum: { unit: "business_day", value: 5 },
